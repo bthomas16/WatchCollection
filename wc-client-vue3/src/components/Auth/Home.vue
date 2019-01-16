@@ -65,7 +65,6 @@ export default {
 </script>
 
 <style scoped>
-
     #titleCard {
         position: absolute;
         margin-top: 6rem;

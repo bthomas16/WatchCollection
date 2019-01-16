@@ -7,7 +7,7 @@
                 <b-row no-gutters>
                     <b-col cols="6" md="4" v-for="watch in FeaturedWatches" :key="watch.id" class="pointer px-1 watchCard"  @click="selectWatch(watch)">
                         <b-row align-v="start" align-h="end" class="mb-3 bg-white" no-gutters>
-                            <b-col cols="12" class="border p-1 p-lg-3 bg-white watchImgWrapper center">
+                            <b-col cols="12" class="p-1 p-lg-3 bg-white watchImgWrapper center">
                                 <b-img
                                 @click="selectWatch(watch)"
                                 :src="ROOT_API + watch.src.images[0].src"
@@ -190,16 +190,20 @@ export default {
 </script>
 
 <style scoped>
-    .container-fluid {
+    /* .container-fluid {
+        height: 100%;
+    } */
+
+    /* .rowContainer {
         height: 100vh;
-    }
+    } */
 
     .watchName {
         font-size: 1vw;
     }
 
     .watchCard {
-        height: 18.75rem !important;
+        height: 19rem !important;
     }
 
     .watchImgWrapper {
@@ -227,7 +231,7 @@ export default {
 
     }
 
-    @media(max-width: 1000px) {
+    @media(max-width: 990px) {
         .container-fluid {
             height: auto;
         }

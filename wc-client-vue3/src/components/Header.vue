@@ -47,11 +47,7 @@ export default {
 }
 </script>
 
-<style>
-
-/* .bg-header {
-  background-color: rgba(86, 163, 166, .85)
-} */
+<style scoped>
 
 .logo {
   width: 10rem;
